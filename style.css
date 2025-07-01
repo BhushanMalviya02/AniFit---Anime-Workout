@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+  background-color: white;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  width: 95%;
+  height: 5rem;
+  border-radius: 40px;
+  background-color: #fcf1ef;
+  left: 1%;
+  top: 1rem;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+
+  background-color: rgba(255, 245, 245, 0.7); /* light pink glassy */
+  backdrop-filter: blur(10px); /* glass blur */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
+}
+.navbar-left,
+.navbar-right,
+.navbar-cneter {
+  display: flex;
+  align-items: flex-start;
+}
+
+.icon {
+  width: 90px;
+  height: 60px;
+  border-radius: 40px;
+}
+.web-name {
+  font-size: xx-large;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  color: black;
+  padding: 10px;
+  padding-right: 0;
+  margin: 0;
+
+  letter-spacing: 3px;
+}
+a {
+  font-size: x-large;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  margin: 0 30px;
+  margin-left: 0;
+  padding-left: 0;
+  color: black;
+  text-decoration: none;
+}
+.profile-text {
+  text-decoration: none;
+  color: whitesmoke;
+  margin-left: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 3px;
+}
+.container-profile {
+  width: 120px;
+  height: 60px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border: 2px solid black;
+}
+
+.hover:hover {
+  color: #4a4a4a;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.hero-section {
+  background-image: url(./assets/images/erenmain.jpeg); /* replace with your image path */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+  margin-top: 100px;
+  margin-bottom: 0;
+
+  padding-bottom: 0;
+}
+
+.hero-text-box {
+  background-color: rgba(0, 0, 0, 0.8); /* translucent black */
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 80%;
+  
+  
+}
+
+.hero-quote {
+  font-family: "Bangers", system-ui;
+  color: #fefefe;
+  font-size: 2rem;
+  line-height: 1.6;
+  letter-spacing: 3px;
+  text-align: left;
+  margin: 0;
+}
+.character-section{
+    margin-top: 150px;
+  background-color: white;
+  padding: 40px 10px;
+  padding-bottom: 150px;
+  text-align: center;
+}
+.character-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+.character-heading {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: black;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+
+}
+
+.character-container {
+  padding-top: 30px;
+    display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+  gap: 2rem;
+}
+
+
+.character-card {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  width: 320px;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+.character-card:hover {
+  transform: translateY(-10px);
+}
+.character-img {
+  width: 100%;
+  height: 380px;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+.character-name {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  letter-spacing: 1px;
+}
+.character-desc {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.character-btn {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.character-btn:hover {
+  background-color: #ff4040;
+  color: #fff;
+}
+
+.motivation-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: white;
+  color: white;
+  padding-bottom: 100px;
+}
+.motivation-heading {
+   font-size: 4rem;
+  font-weight: bolder;
+  color: black;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  letter-spacing: 1px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 40px;
+  justify-items: center;
+  background-color: #d1dbe4;
+  width: 100%;
+  padding: 50px;
+  padding-bottom: 100px;
+  
+}
+.motivation-card {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  height: 300px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius:40px ;
+}
+.quote {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.motivation-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  align-self: center;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #ffd380;
+  letter-spacing: 2px;
+}
+
+
+
+
+
+
+.physiques-section {
+  text-align: center;
+  padding: 50px 20px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  background-color: white;
+  color: white;
+}
+
+.physiques-section h2 {
+  font-size: 4rem;
+  color: #000;
+  margin-bottom: 50px;
+  padding-bottom: 40px;
+  letter-spacing: 2px;
+
+}
+
+.physiques-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 10%;
+}
+
+.physiques-grid img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.physiques-grid img:hover {
+  transform: scale(1.05);
+}
+
+
+
+.about {
+  background-color: black;
+  color: #f5f5f5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+.contact {
+  background-color: black;
+  color: #e0e0e0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+.footer {
+  background-color: #000000;
+  color: #888888;
+  padding: 50px;
+  text-align: center;
+  font-size: 1rem;
+}
